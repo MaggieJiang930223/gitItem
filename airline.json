@@ -1,0 +1,14 @@
+[
+    {"destination":"大坂","startTime":"1月01日","endTime":"1月8日","price":"286"},
+    {"destination":"名古屋","startTime":"12月31日","endTime":"1月07日","price":"298"},
+    {"destination":"首尔","startTime":"12月26日","endTime":"1月02日","price":"455"},
+    {"destination":"伦敦","startTime":"12月29日","endTime":"1月8日","price":"477"},
+    {"destination":"曼谷","startTime":"12月30日","endTime":"1月10日","price":"553"},
+    {"destination":"东京","startTime":"1月1日","endTime":"1月12日","price":"606"},
+    {"destination":"马尼拉","startTime":"12月31日","endTime":"1月8日","price":"635"},
+    {"destination":"胡志明市","startTime":"12月28日","endTime":"1月5日","price":"847"},
+    {"destination":"吉隆坡","startTime":"1月3日","endTime":"1月10日","price":"874"},
+    {"destination":"台北","startTime":"1月5日","endTime":"1月12日","price":"950"},
+    {"destination":"巴黎","startTime":"1月1日","endTime":"1月15日","price":"1111"},
+    {"destination":"釜山","startTime":"1月10日","endTime":"1月18日","price":"1041"}
+]

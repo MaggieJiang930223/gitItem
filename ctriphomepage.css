@@ -1,0 +1,749 @@
+/* 清除样式 */
+*{
+    margin:0;
+    padding:0;
+}
+body,html{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+ul li{
+    list-style: none;
+}
+
+/* 顶部信息条 */
+.home{
+    width:100%;
+}
+.topContainer{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background:rgb(231, 229, 229);
+    /* overflow: hidden; */
+}
+
+/* 解决高度塌陷 */
+.clearfix:after{
+content:".";
+display:block;
+height:0px;
+clear:both;
+visibility:hidden;
+}
+
+/* 版心样式，宽1170px,居中 */
+.container{
+    width:1170px;
+    margin:0 auto;
+}
+.slogan{
+    width:200px;
+    float:left;
+    text-align: left;
+}
+.language{
+    position: relative;
+    width: 116px;
+    float:left;
+}
+.language:hover{
+    background:white;
+}
+.drowndrop{
+    width: 590px;
+    background:white;
+    position: absolute;
+    left:0px;
+    top:40px;
+    display: none;
+    z-index: 55;
+}
+.language_list{
+    overflow: hidden;
+    margin:0 20px;
+}
+.language_list>li>ul>li:hover{
+    background:rgb(236, 235, 235);
+}
+.languageLeft,
+.languageCenter,
+.languageRight{
+    float:left;
+    width:180px;
+}
+.registerInfo{
+    width:160px;
+}
+.topRight{
+    /* float:left; */
+    padding-left:360px;
+    height:40px;
+}
+.topRight>li{
+    float:left;
+}
+.topRight>li>a{
+    display:inline-block;
+    width:100px;
+}
+.login:hover,
+.freeRegister:hover{
+    color:blue;
+}
+
+/* 我的携程 */
+.myXieCheng{
+    position: relative;
+}
+.myXieCheng:hover{
+    background: white;
+}
+.myXieChengDetail{
+    position: absolute;
+    left:0;
+    top:40px;
+    background:white;
+    display:none;
+}
+.myXieChengDetail>li{
+    width:100px;
+    height:40px;
+}
+.myXieCheng ul li:hover{
+    background:rgb(236, 235, 235);
+}
+
+/* 我的订单 */
+.myOrder{
+    position: relative;
+}
+.myOrder:hover{
+    background: white;
+}
+.myOrderDetail li:hover{
+    background:rgb(236, 235, 235);
+}
+.myOrderDetail{
+    background:white;
+    position: absolute;
+    left:0;
+    top:40px;
+    display: none;
+}
+
+/* logo,搜索框 */
+.logoContainer{
+    width:100%;
+    height:80px;
+    /* line-height: 80px; */
+}
+.myCtripLogo{
+    margin:9px auto;
+}
+.searchAreaBg{
+    position: relative;
+    display: inline-block;
+    width:360px;
+    height:40px;
+    background: blue;
+    border-radius: 5px;
+    margin:15px 0px 15px 50px;
+}
+.searchArea{
+    position: absolute;
+    left:0;
+    top:0px;
+    width:300px;
+    height:36px;
+}
+.searchBtn{
+    font-size:18px;
+    background:none;
+    border: none;
+    right:8px;
+    top:6px;
+    position: absolute;
+    color:white;
+}
+
+/* 联系电话 */
+.telNum{
+    padding:4px;
+    margin-left:300px;
+    text-align: right;
+    display: inline-block;
+    width:240px;
+    height:38px;
+    background:white;
+    overflow: hidden;
+}
+/* 导航条 */
+.nav{
+    width:100%;
+    height:40px;
+    background: rgb(84, 84, 235);
+}
+.navList{
+    overflow: hidden;
+}
+.navList>li{
+    width:62px;
+    float: left;
+    text-align: center;
+    height:40px;
+    line-height: 40px;
+}
+.navList>li:hover{
+    background: blue;
+}
+.navList>li>a{
+    color:white;
+}
+.navInfo{
+    width:100%;
+    height:40px;
+    background:white;
+}
+.navMoreInfo{
+    overflow: hidden;
+}
+.navMoreInfo>li{
+    float: left;
+    height:40px;
+    line-height: 40px;
+    margin:0 5px;
+}
+.navMoreInfo>li>a{
+    font-size: 12px;
+}
+.navMoreInfo>li>a:hover{
+    color:blue;
+}
+.hotel{
+    float: left;
+}
+.hotelDetails{
+    overflow: hidden;
+    float: left;
+}
+.hotelDetails>li{
+    float: left;
+}
+.banner{
+    width:100%;
+    height:340px;
+    overflow: hidden;
+    position: relative;
+}
+/* .bannerImg>ul{
+    overflow: hidden;
+} */
+/* .bannerImg>ul>li{
+    float:left;
+   width:100%;
+   height:340;
+} */
+
+/* banner上信息栏定位 */
+.bannerInner{
+    width:600px;
+    height:300px;
+    margin-left:90px;
+    background: white;
+    position: absolute;
+    top:20px;
+    z-index: 54;
+}
+
+/* banner图里搜索框左边导航栏 */
+.bannerInnerLeft{
+    float:left;
+}
+.bannerInnerLeft>li>a{
+    display: inline-block;
+    width:90px;
+    height:42px;
+    color:white;
+    font-size: 18px;
+    line-height: 42px;
+    background: rgb(84, 84, 235);
+    text-align: center;
+    border-bottom: 1px dashed white;
+}
+.bannerInnerLeft>li>a:hover{
+    color:blue;
+    background:white;
+}
+/* banner图里右边输入框内容*/
+.bannerInnerRight{
+    padding-left:95px;
+}
+.bannerInnerRight>div{
+    height:40px;
+    margin:5px;
+}
+.bannerInnerRight>div>span{
+    display: inline-block;
+    width:65px;
+    font-size: 15px;
+    text-align: center;
+}
+.bannerInnerRight>div>input{
+    height:25px;
+}
+/* banner图里右边顶部导航栏*/
+.bannerInnerTop{
+    margin:15px 0 15px 0;
+    width:490px;
+    overflow: hidden;
+    border-bottom: 2px solid #ccc;
+}
+.bannerInnerTop>li{
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.bannerInnerTop>li>a{
+    font-size: 16px;
+    padding:0 9px;
+}
+
+/* banner图里搜索框按钮 */
+.bannerInnerSearch{
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    width:120px;
+    height:30px;
+    background:orange;
+    color:white;
+    margin-left:366px;
+}
+.allInfo{
+    width:100%;
+    margin-top: 30px;
+}
+/* 旅游景点 */
+.travelPlace>ul,
+.overSeaHotel>ul,
+.discountTicket>ul{
+    overflow: hidden;
+}
+.travelPlace>ul>li,
+.overSeaHotel>ul>li,
+.discountTicket>ul>li{
+    float: left;
+}
+.travelPlace>ul>li>a,
+.overSeaHotel>ul>li>a,
+.discountTicket>ul>li>a{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.travelPlace>ul>li>a:hover,
+.overSeaHotel>ul>li>a:hover,
+.discountTicket>ul>li>a:hover{
+    color:blue;
+}
+.hotPlace,
+.overSea,
+.hotLine,
+.hotCity{
+    border:2px solid #ccc;
+    margin:10px;
+}
+.hotPlace>ul,
+.overSea>ul,
+.hotLine>ul,
+.hotCity>ul{
+    overflow: hidden;
+}
+.hotPlace>ul>li,
+.overSea>ul>li,
+.hotLine>ul>li,
+.hotCity>ul>li{
+    height:35px;
+    line-height: 35px;
+    float: left;
+}
+.hotPlace>ul>li>a,
+.overSea>ul>li>a,
+.hotLine>ul>li>a,
+.hotCity>ul>li>a{
+    margin:0 10px;
+    color:blue;
+}
+.hotPlace>ul>li>a:hover,
+.overSea>ul>li>a:hover,
+.hotLine>ul>li>a:hover,
+.hotCity>ul>li>a:hover{
+    color:white;
+    background:blue;
+    border-radius: 5px;
+    padding:4px;
+}
+.overSeaHotelInfo,
+.hotCityList{
+    width:200px;
+    margin-left:10px;
+    float: left;
+}
+.overSeaHotelInfo>p>a:hover,
+.hotCityList>p>a:hover{
+    color:blue;
+}
+.overSeaHotelInfo>h4,
+.overSeaHotelInfo>p,
+.hotCityList>h4,
+.hotCityList>p{
+    height:30px;
+    line-height: 30px;
+}
+.overSeaHotelInfo>h4{
+    margin-top:15px;
+}
+/* .container-hotCity{
+    position: relative;
+}
+.hotCityBox{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    display:none;
+}
+.container-hotCity .active{
+    display:block;
+} */
+.domesticTravel{
+    overflow: hidden;
+}
+.domesticTravel>ul{
+    float: left;
+    width:920px;
+}
+.domesticTravel>ul>li{
+    float: left;
+    /* margin:5px; */
+}
+
+.domesticTravel>ul>li{
+    margin:4px;
+    width:220px;
+    height:160px;
+}
+/* .travelCity{
+    position: relative;
+} */
+.guangzhou{
+    background:url(./images/guangzhou.jpg) no-repeat;
+}
+.sanya{
+    background:url(./images/sanya.jpg) no-repeat;
+}
+.osaka{
+    background:url(./images/osaka.jpg) no-repeat;
+}
+.pujidao{
+    background:url(./images/pujidao.png) no-repeat;
+}
+.russia{
+    background:url(./images/russia.png) no-repeat;
+}
+.xiamen{
+    background:url(./images/xiamen.jpg) no-repeat;
+}
+.saibandao{
+    background:url(./images/saibandao.png) no-repeat;
+}
+.dubai{
+    background:url(./images/dubai.png) no-repeat;
+}
+.japan{
+    background:url(./images/japan.jpg) no-repeat;
+}
+.mylaysia{
+    background:url(./images/mylaysia.jpg) no-repeat;
+}
+.newzealand{
+    background:url(./images/newzealand.jpg) no-repeat;
+}
+.singapore{
+    background:url(./images/singapore.jpg) no-repeat;
+}
+.australia{
+    background:url(./images/australia.jpg) no-repeat;
+}
+.size{
+    background-size: cover;
+    width:220px;
+    height:160px;
+    position: relative;
+}
+
+.size .detailLink{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    display:inline-block;
+    width:220px;
+    height:160px;
+}
+.size>div{
+    position: absolute;
+    top:20px;
+    left:50px;
+    color:white;
+    width:120px;
+    height:120px;
+    background: rgba(0,0,0,0.40);
+    border-radius: 50%;
+    opacity: 0.8;
+    text-align: center;
+}
+.size>div>p{
+    margin-top:20px;
+    width:120px;
+    text-align: center;
+}
+.localPlace{
+    font-size: 18px;
+    font-weight: bold;
+}
+.size>div>p>b{
+    color:red;
+    font-size: 18px;
+}
+.product-detail{
+    display: none;
+    width:220px;
+    height:160px;
+}
+.domesticTravel ul li:hover .product-detail{
+    display: block;
+    background: rgba(7, 7, 126, 0.849);
+    cursor: pointer;
+    position: relative;
+}
+
+.domesticTravel ul li:hover div:first-child{
+    display: none;
+}
+
+.product-detail>a{
+    display:block;
+    width:220px;
+    height:160px;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.product-detail .title {
+    padding:20px 0;
+    text-align: center;
+    font-size: 22px;
+    color: #FFF;
+    line-height: 18px;
+    font-weight: bold;
+}
+.product-detail .info {
+    position: relative;
+    color:white;
+    padding-left: 28px;
+    margin-bottom: 8px;
+    line-height: 16px;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+}
+.product-detail .link {
+    margin-top: 18px;
+    text-align: center;
+    color:white;
+}
+.vip{
+    margin-top:5px;
+    float:left;
+}
+.overSeaTravel{
+    overflow: hidden;
+}
+.overSeaTravel>ul{
+    float: left;
+    width:700px;
+}
+.overSeaTravel>ul>li{
+    float: left;
+    margin:4px;
+}
+
+.line{
+    overflow: hidden;
+}
+.airPlaneLine{
+    width:900px;
+    float: left;
+}
+.airPlaneLine .airPlaneLineInner{
+    margin:5px;
+    float: left;
+    width:210px;
+    background:rgb(243, 240, 240);
+    position: relative;
+}
+.airPlaneLine .airPlaneLineInner:hover{
+    background:rgb(243, 228, 228);
+}
+.airPlaneLine .airPlaneLineInner>p{
+    margin:10px;
+    height:22px;
+}
+.airPlaneLine .airPlaneLineInner>p>span{
+    color:red;
+    font-size: 20px;
+}
+.airPlaneLine .airPlaneLineInner>p>button{
+    width:60px;
+    height:25px;
+    background: orange;
+    border-radius: 5px;
+    color:white;
+    margin-left:50px;
+    border:none;
+}
+/* .airPlaneLineInner{
+    
+} */
+.airPlaneLineInnerLink{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    display: block;
+    width:210px;
+    height:105px;
+}
+.carsList{
+    padding-left: 5px;
+    overflow: hidden;
+}
+.carsList>div{
+    float:left;
+    margin:5px;
+    width:220px;
+    overflow: hidden;
+}
+.carsList>div>p{
+   height:30px;
+   white-space: nowrap; 
+}
+.rentCarPrice{
+    font-size: 18px;
+    color:red;
+    /* text-align: right; */
+    display:inline-block;
+    margin-left:30px;
+}
+
+.carsList>div>a>img{
+    width:220px;
+}
+
+/* 底部 */
+footer{
+    width:100%;
+    background:white;
+}
+.footerTop{
+    color:rgb(110, 99, 99);
+    overflow: hidden;
+    margin-top: 50px;
+}
+.footerTop a{
+    color:rgb(110, 99, 99);
+}
+.footerTop a:hover{
+    color: blue;
+}
+
+.footerTopLeft,
+.footerTopCenter,
+.footerTopRight{
+    float:left;
+}
+.footerTopLeft{
+    width:230px;
+    padding-left:10px;
+    height:30px;
+    line-height: 30px;
+}
+
+.footerTopCenter>ul{
+    overflow: hidden;
+}
+.footerTopCenter>ul>li{
+    padding:0 15px;
+    border-left:1px solid #ccc;
+    float: left;
+}
+.travelGuide,
+.cooperate,
+.aboutCtrip{
+    overflow: hidden;
+}
+.aboutCtrip>li{
+    width:110px;
+}
+.travelGuideLeft,
+.travelGuideRight,
+.cooperateLeft,
+.cooperateRight,
+.aboutCtripLeft,
+.aboutCtripRight{
+    float: left;
+}
+.travelGuideLeft>ul>li,
+.travelGuideRight>ul>li{
+    height:30px;
+    line-height:30px;
+    width:80px;
+}
+.cooperateLeft{
+    width:100px;
+}
+.cooperateRight{
+    width:120px;
+}
+.cooperateLeft>ul>li,
+.cooperateRight>ul>li{
+    height:30px;
+    line-height:30px;
+}
+.aboutCtripLeft>ul>li,
+.aboutCtripRight>ul>li{
+    height:30px;
+    line-height:30px;
+}
+.footerTopRight{
+    border-left:1px solid #ccc;
+    padding-left: 15px;
+}
+.footerTopRight>a>img{
+    padding: 20px 0;
+}
+

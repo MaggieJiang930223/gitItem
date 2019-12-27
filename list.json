@@ -1,0 +1,159 @@
+{
+    "tags": {
+        "nme": "热门目的地",
+        "itemLst": [
+            {
+                "nme": "普吉岛",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E6%99%AE%E5%90%89%E5%B2%9B&filters=dc364"
+            },
+            {
+                "nme": "曼谷",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E6%9B%BC%E8%B0%B7&filters=dc191"
+            },
+            {
+                "nme": "东京",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E4%B8%9C%E4%BA%AC&filters=dc294"
+            },
+            {
+                "nme": "清迈",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E6%B8%85%E8%BF%88&filters=dc209"
+            },
+            {
+                "nme": "香港",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E9%A6%99%E6%B8%AF&filters=dc38"
+            },
+            {
+                "nme": "芽庄",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E8%8A%BD%E5%BA%84&filters=dc670"
+            },
+            {
+                "nme": "巴厘岛",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E5%B7%B4%E5%8E%98%E5%B2%9B&filters=dc438"
+            },
+            {
+                "nme": "沙巴",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E6%B2%99%E5%B7%B4&filters=dc538"
+            },
+            {
+                "nme": "大阪",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E5%A4%A7%E9%98%AA&filters=dc293"
+            },
+            {
+                "nme": "岘港",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E5%B2%98%E6%B8%AF&filters=dc669"
+            },
+            {
+                "nme": "迪拜",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E8%BF%AA%E6%8B%9C&filters=dc1062"
+            },
+            {
+                "nme": "澳门",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E6%BE%B3%E9%97%A8&filters=dc39"
+            },
+            {
+                "nme": "墨尔本",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E5%A2%A8%E5%B0%94%E6%9C%AC&filters=dc312"
+            },
+            {
+                "nme": "冲绳",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E5%86%B2%E7%BB%B3&filters=dc292"
+            },
+            {
+                "nme": "悉尼",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E6%82%89%E5%B0%BC&filters=dc236"
+            },
+            {
+                "nme": "新加坡",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E6%96%B0%E5%8A%A0%E5%9D%A1&filters=dc53"
+            },
+            {
+                "nme": "暹粒",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E6%9A%B9%E7%B2%92&filters=dc599"
+            },
+            {
+                "nme": "台北",
+                "lnk": "https://huodong.ctrip.com/activity/search/?keyword=%E5%8F%B0%E5%8C%97&filters=dc360"
+            }
+        ],
+        "layout": "RelativeLayout"
+    },
+    "catgId": 9001,
+    "exNme": "更多当地玩乐",
+    "exLnk": "https://huodong.ctrip.com/activity/search/?keyword=&filters=c40",
+    "prdLst": [
+        {
+            "nme": "【携程专线】+冲绳县万座毛+古宇利岛+冲绳美丽海水族馆一日游【多地发车赠水族馆票中文导】",
+            "img": "https://dimg04.c-ctrip.com/images/350p1600000109qx2C354_C_280_158.jpg",
+            "lnk": "http://huodong.ctrip.com/activity/10266457.html",
+            "subNme": "日本·冲绳",
+            "price": {
+                "amt": 299.0,
+                "currency": "CNY",
+                "type": "min"
+            }
+        },
+        {
+            "nme": "清莱白庙+黑庙+清莱蓝庙一日游【可选奔驰吃货/9人VIP/12人惊喜版】",
+            "img": "https://dimg06.c-ctrip.com/images/350l0n000000ec6k84D0F_C_280_158.jpg",
+            "lnk": "http://huodong.ctrip.com/activity/11375528.html",
+            "subNme": "泰国·清迈",
+            "price": {
+                "amt": 119.0,
+                "currency": "CNY",
+                "type": "min"
+            }
+        },
+        {
+            "nme": "曼谷丹嫩沙多水上集市+美功铁道市场一日游【上门接送/睡醒出发/大皇宫/安帕瓦VIP】",
+            "img": "https://dimg04.c-ctrip.com/images/3507180000014tiu9EF0E_C_280_158.jpg",
+            "lnk": "http://huodong.ctrip.com/activity/5493365.html",
+            "subNme": "泰国·曼谷",
+            "price": {
+                "amt": 9.0,
+                "currency": "CNY",
+                "type": "min"
+            }
+        },
+        {
+            "nme": "越南岘港巴拿山+佛手桥+往返缆车一日游【可选专车接送+导游+可选城堡自助餐+火车】",
+            "img": "https://dimg04.c-ctrip.com/images/350i10000000pfzsaB933_C_280_158.jpg",
+            "lnk": "http://huodong.ctrip.com/activity/14819361.html",
+            "subNme": "越南·岘港",
+            "price": {
+                "amt": 208.0,
+                "currency": "CNY",
+                "type": "min"
+            }
+        }
+    ],
+    "tabs": [
+        {
+            "tabNme": "一日游",
+            "pinyin": "YiRiYou"
+        },
+        {
+            "tabNme": "交通接驳",
+            "pinyin": "JiaoTongJieBo"
+        },
+        {
+            "tabNme": "特色体验",
+            "pinyin": "TeSeTiYan"
+        },
+        {
+            "tabNme": "演出/赛事",
+            "pinyin": "YanChu_SaiShi"
+        },
+        {
+            "tabNme": "游船观光",
+            "pinyin": "YouChuanGuanGuang"
+        },
+        {
+            "tabNme": "SPA水疗",
+            "pinyin": "SPAShuiLiao"
+        },
+        {
+            "tabNme": "当地美食",
+            "pinyin": "DangDiMeiShi"
+        }
+    ]
+}

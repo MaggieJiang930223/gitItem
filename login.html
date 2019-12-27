@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cTripLogin</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .logo>img {
+            padding-left: 150px;
+            margin-top: 20px;
+        }
+
+        .remindWords {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: rgb(136, 132, 132);
+            background: rgb(248, 233, 202);
+        }
+
+        /* .remindWords>span>a {
+            color: rgb(136, 132, 132);
+            
+        } */
+
+        .remindWords>span>a:hover {
+            text-decoration: underline;
+        }
+
+        .bgphoto {
+            width: 100%;
+            height: 540px;
+            background: url(./images/loginbgphoto.jpg) no-repeat;
+            background-position: -300px 0;
+            position: relative;
+        }
+
+        .login-box {
+            width: 380px;
+            height: 420px;
+            background-color: white;
+            position: absolute;
+            left: 700px;
+            top: 40px;
+        }
+
+        #username,
+        #password {
+            width: 300px;
+            height: 28px;
+            line-height: 28px;
+            margin-bottom: 20px;
+            vertical-align: middle;
+            padding: 5px;
+        }
+
+        .login-box-inner {
+            width: 320px;
+            margin: 20px auto;
+        }
+
+        .login-boxtop {
+            margin-bottom: 20px;
+        }
+
+        .login-boxtop>a {
+            padding-left: 120px;
+        }
+
+        .login-boxtop>a:hover {
+            text-decoration: underline;
+        }
+
+        .tel-code-login {
+            padding-left: 100px;
+        }
+
+        .auto-login,
+        .tel-code-login {
+            font-size: 12px;
+        }
+
+        .registerbtn {
+            width: 310px;
+            height: 40px;
+            border-radius: 5px;
+            background: orange;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin: 15px 0;
+        }
+
+        .registerbtn:hover {
+            background: rgb(177, 126, 33);
+        }
+
+        .clause-and-policy {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .clause-and-policy>a:hover {
+            text-decoration: underline;
+        }
+
+        .other-info {
+            margin-top: 30px;
+        }
+
+        .other-info>a {
+            font-size: 12px;
+        }
+
+        .free-register {
+            padding-left: 40px;
+            color: blue;
+        }
+
+        .info-list {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .info-list>a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 5px;
+            text-align: center;
+            font-size: 12px;
+            color: rgb(136, 132, 132);
+        }
+    </style>
+    <script src="./jquery1.12.4.js"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./images/ctriplogo.png" alt="">
+    </div>
+    <div class="remindWords">
+        <span>依据《网络安全法》，为保障您相关功能的正常使用，账号需绑定手机，如您未绑定则登录后会引导您操作绑定。 新版 <a href="#">《隐私政策》</a> 已上线，感谢您的支持。</span>
+    </div>
+    <div class="bgphoto">
+        <div class="login">
+            <div class="login-box">
+                <div class="login-box-inner">
+                    <div class="login-boxtop">
+                        <span>携程账号登录</span>
+                        <a href="#">手机号查单></a>
+                    </div>
+                    <form target="self">
+                        <input type="text" name="username" placeholder="用户名" id="username"><br>
+                        <input type="password" name="password" placeholder="登录密码" id="password"><br>
+                        <input type="checkbox"><span class="auto-login">30天内自动登录</span>
+                        <a href="#" class="tel-code-login">手机动态密码登录</a><br>
+                        <input type="button" value="登 录" class="registerbtn">
+                        <div class="clause-and-policy">
+                            登录即代表您同意我们的 <a href="#"> 服务协议</a> 和 <a href="#"> 隐私政策</a>
+                        </div>
+                    </form>
+                    <div class="other-info">
+                        <a href="#">境外手机</a> |
+                        <a href="#">公司客户</a> |
+                        <a href="#">合作卡</a> |
+                        <a href="#">携程通</a>
+                        <a href="#" class="free-register">免费注册</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="info-list">
+        <a href="#">网站导航</a> |
+        <a href="#">宾馆索引</a> |
+        <a href="#">用户协议</a> |
+        <a href="#">关于携程</a> |
+        <a href="#">企业公民</a> |
+        <a href="#">诚聘英才</a> |
+        <a href="#">分销联盟</a> |
+        <a href="#">企业礼品卡采购</a> |
+        <a href="#">代理合作</a> |
+        <a href="#">广告业务</a> |
+        <a href="#">联系我们</a> |
+        <a href="#">返回旧版</a>
+    </div>
+    <div class="copyright">
+        Copyright © 1999-2019, ctrip.com. All rights reserved.
+    </div>
+</body>
+<script>
+    $('.registerbtn').bind('click', function () {
+        $.ajax({
+            type: 'POST',
+            url: 'http://10.36.135.89/ctrip/login.php',
+            data: {
+                username: $('#username').val(),
+                password: $('#password').val()
+            },
+            success: function (msg) {
+                if (msg == 1) {
+                    location.href='./ctriphomepage.html';
+                }
+                if (msg == 0) {
+                    alert("用户名与密码错误，请重新登录");
+                }
+            }
+        })
+    })
+</script>
+
+</html>

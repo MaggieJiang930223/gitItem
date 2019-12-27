@@ -1,0 +1,511 @@
+*{
+    margin:0;
+    padding:0;
+}
+body,html{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+li{
+    list-style: none;
+}
+
+/* 顶部信息条 */
+.home{
+    width:100%;
+}
+.topContainer{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background:rgb(231, 229, 229);
+    /* overflow: hidden; */
+}
+
+/* 解决高度塌陷 */
+.clearfix:after{
+content:".";
+display:block;
+height:0px;
+clear:both;
+visibility:hidden;
+}
+
+/* 版心样式，宽1170px,居中 */
+.container{
+    width:1170px;
+    margin:0 auto;
+}
+.slogan{
+    width:200px;
+    float:left;
+    text-align: left;
+}
+.language{
+    position: relative;
+    width: 116px;
+    float:left;
+}
+.language:hover{
+    background:white;
+}
+.drowndrop{
+    width: 590px;
+    background:white;
+    position: absolute;
+    left:0px;
+    top:40px;
+    display: none;
+    z-index: 55;
+}
+.language_list{
+    overflow: hidden;
+    margin:0 20px;
+}
+.language_list>li>ul>li:hover{
+    background:rgb(236, 235, 235);
+}
+.languageLeft,
+.languageCenter,
+.languageRight{
+    float:left;
+    width:180px;
+}
+.registerInfo{
+    width:160px;
+}
+.topRight{
+    padding-left:360px;
+    height:40px;
+}
+.topRight>li{
+    float:left;
+}
+.topRight>li>a{
+    display:inline-block;
+    width:100px;
+}
+.login:hover,
+.freeRegister:hover{
+    color:blue;
+}
+
+/* 我的携程 */
+.myXieCheng{
+    position: relative;
+}
+.myXieCheng:hover{
+    background: white;
+}
+.myXieChengDetail{
+    position: absolute;
+    left:0;
+    top:40px;
+    background:white;
+    display:none;
+}
+.myXieChengDetail>li{
+    width:100px;
+    height:40px;
+}
+.myXieCheng ul li:hover{
+    background:rgb(236, 235, 235);
+}
+
+/* 我的订单 */
+.myOrder{
+    position: relative;
+}
+.myOrder:hover{
+    background: white;
+}
+.myOrderDetail li:hover{
+    background:rgb(236, 235, 235);
+}
+.myOrderDetail{
+    background:white;
+    position: absolute;
+    left:0;
+    top:40px;
+    display: none;
+}
+
+/* logo,搜索框 */
+.logoContainer{
+    width:100%;
+    height:80px;
+    /* line-height: 80px; */
+}
+.myCtripLogo{
+    margin:9px auto;
+}
+.searchAreaBg{
+    position: relative;
+    display: inline-block;
+    width:360px;
+    height:40px;
+    background: blue;
+    border-radius: 5px;
+    margin:15px 0px 15px 50px;
+}
+.searchArea{
+    position: absolute;
+    left:0;
+    top:0px;
+    width:300px;
+    height:36px;
+}
+.searchBtn{
+    font-size:18px;
+    background:none;
+    border: none;
+    right:8px;
+    top:6px;
+    position: absolute;
+    color:white;
+}
+
+/* 联系电话 */
+.telNum{
+    padding:4px;
+    margin-left:300px;
+    text-align: right;
+    display: inline-block;
+    width:240px;
+    height:38px;
+    background:white;
+    overflow: hidden;
+}
+/* 导航条 */
+.nav{
+    width:100%;
+    height:40px;
+    background: rgb(84, 84, 235);
+}
+/* .navList{
+    overflow: hidden; 
+} */
+.navList>li{
+    width:62px;
+    float: left;
+    text-align: center;
+    height:40px;
+    line-height: 40px;
+}
+.navList>li:hover{
+    background: blue;
+}
+.navList>li>a{
+    color:white;
+}
+.navInfo{
+    width:100%;
+    height:40px;
+    background:white;
+}
+.navMoreInfo{
+    overflow: hidden;
+}
+.navMoreInfo>li{
+    float: left;
+    height:40px;
+    line-height: 40px;
+    margin:0 5px;
+}
+.navMoreInfo>li>a{
+    font-size: 12px;
+}
+.navMoreInfo>li>a:hover{
+    color:blue;
+}
+.SH-order {
+    margin-top: 15px;
+}
+
+/* .container {
+    overflow: hidden;
+} */
+footer{
+    overflow: hidden;
+}
+
+.SH-myOrderInfo {
+    float: left;
+}
+.SH-myOrderInfo a:hover{
+    color:blue;
+}
+.SH-orderDetails {
+    padding-left: 160px;
+}
+
+.SH-myOrderInfo>ul>li {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    background: rgb(250, 248, 248);
+    border: 1px solid rgb(224, 221, 221);
+}
+.SH-myOrderInfo>ul>li:hover{
+    background:white;
+}
+.SH-showOrders{
+    position: relative;
+}
+.SH-showOrderList {
+    position: absolute;
+    left:0;
+    top:42px;
+    display: none;
+    background:white;
+}
+.SH-showOrderList>li{
+    font-size:12px;
+    width:118px;
+    height:20px;
+    line-height: 20px;
+    padding-left:20px;
+    border: 1px solid rgb(224, 221, 221);
+}
+
+.SH-myWallet {
+    display: none;
+}
+
+.SH-personCenterList {
+    display: none;
+}
+
+.SH-usuallyInfoList {
+    display: none;
+}
+
+.SH-orderStatus {
+    overflow: hidden;
+    border-bottom: 2px solid rgb(85, 85, 207);
+}
+
+.SH-orderStatusInner>li {
+    float: left;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(158, 153, 153);
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    border-bottom: none;
+}
+.SH-orderStatusInner>li:hover{
+    background: rgb(216, 216, 251);;
+}
+.SH-orderStatusInfo {
+    margin-top: 20px;
+}
+
+.SH-orderStatusInfo input {
+    width: 110px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.SH-orderStatusInfo span {
+    margin: 8px;
+}
+
+.SH-orderStatusInfo select {
+    height: 25px;
+    line-height: 25px;
+    margin: 8px;
+}
+
+.SH-orderCheck {
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.allCheck{
+    width:1010px;
+    height:50px;
+    line-height: 50px;
+    margin: 10px 0 20px 160px;
+    background: rgb(245, 243, 243);
+}
+.selectAll{
+    padding-left:10px;
+}
+.orderDetails{
+    padding-left:150px;
+}
+.orderAmount{
+    padding-left:600px;
+}
+.orderContainer{
+    margin-left: 160px;
+    
+}
+.orderContainerBox{
+    border:1px solid #ccc;
+    padding:10px;
+}
+.orderDetailsInfo-1{
+    background: rgb(236, 235, 235);
+    height:30px;
+    line-height: 30px;
+}
+.orderNum{
+    padding-left:10px;
+}
+.orderDate{
+    padding-left:35px;
+}
+.orderDetailsInfo-2{
+    overflow: hidden;
+    margin:10px;
+}
+.routeLineLeft{
+    float: left;
+    width:750px;
+    height:50px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.routeLineLeft>a{
+    font-size: 16px;
+    font-weight:700;   
+}
+.routeLineRight{
+    width:150px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 60px;
+    float: left;
+}
+.routeLineRight .money{
+    color:red;
+    font-size: 16px;
+    font-weight:700;
+}
+.routeLineRight .status{
+    font-size: 16px;
+}
+.travelInfo{
+    margin-left:10px;
+}
+.travelInfo>li{
+    font-size: 12px;
+    margin-bottom:5px;
+}
+.continue{
+    margin:20px 0 0 760px;
+}
+.continue>button{
+    
+    width:100px;
+    height:30px;
+    border:1px solid blue;
+    padding:5px 20px;
+    background:white;
+    border-radius: 5px;
+}
+.continue>button>a{
+    color:blue;
+}
+.continue>button:hover{
+    background:rgb(219, 219, 255);
+}
+.continueOrder{
+    margin-right:20px
+}
+
+/* 底部 */
+footer{
+    width:100%;
+    background:white;
+}
+.footerTop{
+    color:rgb(110, 99, 99);
+    overflow: hidden;
+    margin-top: 50px;
+}
+.footerTop a{
+    color:rgb(110, 99, 99);
+}
+.footerTop a:hover{
+    color: blue;
+}
+
+.footerTopLeft,
+.footerTopCenter,
+.footerTopRight{
+    float:left;
+}
+.footerTopLeft{
+    width:230px;
+    padding-left:10px;
+    height:30px;
+    line-height: 30px;
+}
+
+.footerTopCenter>ul{
+    overflow: hidden;
+}
+.footerTopCenter>ul>li{
+    padding:0 15px;
+    border-left:1px solid #ccc;
+    float: left;
+}
+.travelGuide,
+.cooperate,
+.aboutCtrip{
+    overflow: hidden;
+}
+.aboutCtrip>li{
+    width:110px;
+}
+.travelGuideLeft,
+.travelGuideRight,
+.cooperateLeft,
+.cooperateRight,
+.aboutCtripLeft,
+.aboutCtripRight{
+    float: left;
+}
+.travelGuideLeft>ul>li,
+.travelGuideRight>ul>li{
+    height:30px;
+    line-height:30px;
+    width:80px;
+}
+.cooperateLeft{
+    width:100px;
+}
+.cooperateRight{
+    width:120px;
+}
+.cooperateLeft>ul>li,
+.cooperateRight>ul>li{
+    height:30px;
+    line-height:30px;
+}
+.aboutCtripLeft>ul>li,
+.aboutCtripRight>ul>li{
+    height:30px;
+    line-height:30px;
+}
+.footerTopRight{
+    border-left:1px solid #ccc;
+    padding-left: 15px;
+}
+.footerTopRight>a>img{
+    padding: 20px 0;
+}
